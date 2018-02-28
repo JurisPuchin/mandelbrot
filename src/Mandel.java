@@ -21,9 +21,9 @@ public class Mandel extends JFrame {
 
     static int intIntoGRB(int val){
         double v = val / (double) MAX_ITER;
-        int r = (int) floor(min(max(0, 1.5 - abs(1 - 4* (v - 0.5))),1)* 255);
-        int g = (int) floor(min(max(0, 1.5 - abs(1 - 4* (v - 0.25))),1)* 255);
-        int b = (int) floor(min(max(0, 1.5 - abs(1 - 4* v)),1)* 255);
+        int r = (int) floor(min(max(0, 1.5 - abs(1 - 4 * (v - 0.5))), 1) * 255);
+        int g = (int) floor(min(max(0, 1.5 - abs(1 - 4 * (v - 0.25))), 1) * 255);
+        int b = (int) floor(min(max(0, 1.5 - abs(1 - 4 * v)), 1) * 255);
         int rgb = r;
         rgb = (rgb << 8) | g;
         rgb = (rgb << 8) | b;
