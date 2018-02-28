@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
 import static java.lang.Math.*;
@@ -10,7 +9,7 @@ import static java.lang.Math.*;
 /**
  * Created by jpuchin on 5/15/2017.
  */
-public class Mandel2 extends JFrame {
+public class Mandel extends JFrame {
     public static final int MAX_ITER = 800;
     private final double ZOOM = 150;
     private final double ZOOM_SPEED = 1.01;
@@ -31,7 +30,7 @@ public class Mandel2 extends JFrame {
         return rgb;
     }
 
-    Mandel2() {
+    Mandel() {
         super("Mandelbrot Set");
         setBounds(100, 100, 800, 600);
         setResizable(false);
@@ -75,6 +74,6 @@ public class Mandel2 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new Mandel2();
+        new Mandel();
     }
 }
